@@ -2,3 +2,25 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+:root {
+    --primary-default-color: #64ffda;
+}
+
+body {
+    background-color: #252525;
+}
+
+.text-primary-color {
+    color: var(--primary-default-color);
+}
+
+.bg-primary-color {
+    background-color: var(--primary-default-color);
+}
+
+.border-primary-color {
+    border-color: var(--primary-default-color) !important;
+}
