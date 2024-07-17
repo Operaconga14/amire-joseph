@@ -4,5 +4,70 @@
             <p class="h5 fw-bolder text-lightestslate"><span class="text-green code-font">02.</span> Experience</p><span
                 class="text-slate ms-2">_____________________________________</span>
         </div>
+        <div class="d-flex mt-5">
+            <div ngbNav #nav="ngbNav" [(activeId)]="active"
+                class="nav-pills border border-0 text-green btn btn-outline-transparent flex-column"
+                orientation="vertical">
+                <ng-container ngbNavItem="zarclays">
+                    <button ngbNavLink class="btn btn-outline-transparent text-green code-font">Zarclays</button>
+                    <ng-template ngbNavContent>
+                        <p class="h5 e-font fw-bolder text-lightestslate">Fullstack developer</p>
+                        <p class="small text-lightslate code-font">September 2021 - Present</p>
+                        <p class="text-slate code-font">
+                            "Developed and maintained a web-based application using Angular, Node.js, and MongoDB,
+                            resulting in improved user experience and increased performance.",
+                            "Designed and implemented RESTful APIs to support multiple applications, using Node.js and
+                            Express.",
+                            "Built a real-time chat application using WebSockets and Node.js, increasing communication
+                            and collaboration among team members.",
+                            "Implementation of continuous integration and daily backups.",
+                            "Leading a team of 4 people in the development of a E-commerce platform made in React, Node,
+                            and MySQL.",
+                            "Planning meetings in reports."
+                        </p>
+                    </ng-template>
+                </ng-container>
+                <ng-container ngbNavItem="heirtrust">
+                    <button ngbNavLink class="text-green code-font">Heirtrust</button>
+                    <ng-template ngbNavContent>
+                        <p class="h5 e-font fw-bolder text-lightestslate">Fullstack developer</p>
+                        <p class="small text-lightslate code-font">September 2021 - Present</p>
+                        <p class="text-slate code-font">
+                            "Developed and maintained a web-based application using Angular, Node.js, and MongoDB,
+                            resulting in improved user experience and increased performance.",
+                            "Designed and implemented RESTful APIs to support multiple applications, using Node.js and
+                            Express.",
+                            "Built a real-time chat application using WebSockets and Node.js, increasing communication
+                            and collaboration among team members.",
+                            "Implementation of continuous integration and daily backups.",
+                            "Leading a team of 4 people in the development of a E-commerce platform made in React, Node,
+                            and MySQL.",
+                            "Planning meetings in reports."
+                        </p>
+                    </ng-template>
+                </ng-container>
+                <ng-container ngbNavItem="askit">
+                    <button ngbNavLink class="text-green code-font">Askit</button>
+                    <ng-template ngbNavContent>
+                        <p class="h5 e-font fw-bolder text-lightestslate">Fullstack developer</p>
+                        <p class="small text-lightslate code-font">September 2021 - Present</p>
+                        <p class="text-slate code-font">
+                            "Developed and maintained a web-based application using Angular, Node.js, and MongoDB,
+                            resulting in improved user experience and increased performance.",
+                            "Designed and implemented RESTful APIs to support multiple applications, using Node.js and
+                            Express.",
+                            "Built a real-time chat application using WebSockets and Node.js, increasing communication
+                            and collaboration among team members.",
+                            "Implementation of continuous integration and daily backups.",
+                            "Leading a team of 4 people in the development of a E-commerce platform made in React, Node,
+                            and MySQL.",
+                            "Planning meetings in reports."
+                        </p>
+                    </ng-template>
+                </ng-container>
+            </div>
+
+            <div [ngbNavOutlet]="nav" class="ms-4"></div>
+        </div>
     </div>
 </div>
