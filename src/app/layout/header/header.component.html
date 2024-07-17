@@ -1,11 +1,19 @@
 <nav class="navbar header-background text-white navbar-expand-lg navbar-dark justify-content-between">
     <div class="container-fluid">
-        <a class="navbar-brand text-primary-color" [routerLink]="['/']"><i class="bi bi-0-circle w-100"></i></a>
+        <a class="navbar-brand text-green" [routerLink]="['/']">
+            <div class="logo-big">
+                <i class="bi bi-boxes w-100 ms-1"></i>
+            </div>
+        </a>
         <div class="d-flex">
-            <a class=" nav-link me-2 a-color" [routerLink]="[ '/']"><small class="text-primary-color code-font fw-bold">01.</small>Home</a>
-            <a class=" nav-link me-2 a-color" [routerLink]="[ '/about']"><small class="text-primary-color code-font fw-bold">02.</small>About</a>
-            <a class=" nav-link me-2 a-color" [routerLink]="[ '/projects']"><small class="text-primary-color code-font fw-bold">03.</small>Projects</a>
-            <a class=" nav-link me-2 a-color" [routerLink]="[ '/contact']"><small class="text-primary-color small code-font fw-bold">04.</small>Contact</a>
+            <a class=" nav-link me-2 a-color" href="#about"><small
+                    class="text-green code-font fw-bold">01.</small>About</a>
+            <a class=" nav-link me-2 a-color" href="#experience"><small
+                    class="text-green code-font fw-bold">02.</small>Experience</a>
+            <a class=" nav-link me-2 a-color" href="#projects"><small
+                    class="text-green code-font fw-bold">03.</small>Projects</a>
+            <a class=" nav-link me-2 a-color" href="#contact"><small
+                    class="text-green small code-font fw-bold">04.</small>Contact</a>
         </div>
     </div>
 </nav>
