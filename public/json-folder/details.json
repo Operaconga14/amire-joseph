@@ -1,0 +1,23 @@
+{
+    "details": "Zswap: Multi-Chain and EVM-Compatible Token Swapping Platform
+Description:
+
+Zswap is a decentralized application (dApp) built for seamless swapping of multi-chain and EVM-compatible tokens. Developed using Angular for a user-friendly and responsive frontend experience, and Solidity (Hardhat) for secure and robust smart contracts on the backend.
+
+Features:
+
+Multi-Chain Swapping: Zswap facilitates swapping tokens across different blockchains that are compatible with the Ethereum Virtual Machine (EVM). This allows users to easily exchange tokens without needing to transfer them to a central exchange.
+EVM Compatibility: Zswap focuses on tokens that are compatible with the EVM, providing a wider range of supported tokens within the EVM ecosystem.
+Secure Smart Contracts: Built with secure and well-tested Solidity smart contracts using the Hardhat development framework.
+User-Friendly Interface: Developed with Angular, Zswap offers a clean and intuitive user interface for a smooth swapping experience.
+Benefits:
+
+Convenience: Swap tokens directly between different blockchains without relying on centralized exchanges.
+Security: Leverage the security of EVM-compatible blockchains and secure smart contract implementation.
+Efficiency: Enjoy a fast and efficient swapping experience with a user-friendly interface.
+Target Audience:
+
+Cryptocurrency users looking for a convenient way to swap tokens across different blockchains.
+Developers building applications that require multi-chain token swapping functionalities.
+Anyone interested in exploring the potential of decentralized finance (DeFi)."
+}
