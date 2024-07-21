@@ -4,15 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DetailsService {
-
-  public name: any;
-  public occupation: any;
-  public stack: any;
-  public yoe: any;
-  public projects: any;
-  public personal: any
-  public reachOut: any;
-  public experience: any;
   public companies: any;
 
   constructor() { }
@@ -73,14 +64,29 @@ Provided website hosting solutions and designed user-friendly interfaces using W
     }
   ]
 
+  socials = [
+    {
+      name: "Github",
+      url: "https://github.com/Operaconga14",
+      icon: "bi bi-bricks"
+    },
+    {
+      name: "Linkedin",
+      url: "https://github.com/Operaconga14",
+      icon: "bi bi-bricks"
+    },
+    {
+      name: "Gmail",
+      url: "mailto:amirejoseph83@gmail.com",
+      icon: "bi bi-bricks"
+    }
+  ]
+
 
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.companies = this.company
-    this.projects = this.featureProject
-    this.personal = this.personalProject
   }
 
 }

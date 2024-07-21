@@ -102,3 +102,7 @@ body {
 .smallest {
     font-size: 11px;
 }
+
+input, .form-control :focus {
+    color: var(--Green) !important;
+}

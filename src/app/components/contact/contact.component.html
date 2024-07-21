@@ -4,5 +4,57 @@
             <p class="h5 fw-bolder text-lightestslate"><span class="text-green code-font">04.</span> Contact</p><span
                 class="text-slate ms-2">_____________________________________</span>
         </div>
+
+        <div class="mt-4 text-green">
+            <div class="row justify-content-between">
+                <p class="h4 mb-3 text-center code-font">Send an Email</p>
+                <div class="col-sm-12 ol-md-6 col-lg-6">
+                    <form [formGroup]="emailGroup" (ngSubmit)="emailMe()">
+                        <fieldset>
+                            <p class="code-font text-center h6">You can Send me an Email with the form below. </p>
+                            <div class="form-group mt-3 mb-2">
+                                <label for="name" class="code-font fw-bold mb-2">Full Name</label> <br>
+                                <input type="text" formControlName="name" name="name"
+                                    class="form-control bg-transparent border border-green text-green">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="code-font fw-bold mb-2">Email</label> <br>
+                                <input type="email" formControlName="email" name="email"
+                                    class="form-control bg-transparent border border-green text-green">
+                            </div>
+
+
+
+                            <div class="form-group mt-3">
+                                <label for="subject" class="code-font fw-bold mb-2">Subject</label> <br>
+                                <input type="text" formControlName="subject" name="subject"
+                                    class="form-control bg-transparent border border-green text-green">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="message" class="code-font fw-bold mb-2">Message</label> <br>
+                                <textarea formControlName="message" name="message"
+                                    class="form-control bg-transparent border border-green text-green" cols="40"
+                                    rows="10" wrap="hard"></textarea>
+                            </div>
+
+                            <div class="mt-4 text-center">
+                                <button class="btn btn-outline-transparent text-green border border-green" type="button"
+                                    (click)="emailMe()">Send</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center h1 text-green mt-5">OR</p>
+        <div class="d-flex justify-content-center">
+            <div *ngFor="let pages of socialHandles">
+                <a href="{{pages.url}}" target="_blank" class="text-green nav-link p-2">
+                    {{pages.name}}
+                </a>
+            </div>
+        </div>
     </div>
 </div>
