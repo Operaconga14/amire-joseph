@@ -1,19 +1,36 @@
-<nav class="navbar header-background text-white navbar-expand-lg navbar-dark justify-content-between">
+<nav
+    class="navbar navbar-expand-lg navbar-dark justify-content-between header-background text-white justify-content-between ">
     <div class="container-fluid">
-        <a class="navbar-brand text-green" [routerLink]="['/']">
-            <div class="logo-big">
-                <i class="bi bi-boxes w-100 ms-1"></i>
-            </div>
+        <a [routerLink]="[ '' ]" class="text-white nav-brand text-decoration-none">
+            <h4 class="fw-bolder">{{title}}</h4>
         </a>
+        <!-- toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Offcanvas NavBar -->
         <div class="d-flex">
-            <a class=" nav-link me-2 a-color" href="#about"><small
-                    class="text-green code-font fw-bold">01.</small>About</a>
-            <a class=" nav-link me-2 a-color" href="#experience"><small
-                    class="text-green code-font fw-bold">02.</small>Experience</a>
-            <a class=" nav-link me-2 a-color" href="#projects"><small
-                    class="text-green code-font fw-bold">03.</small>Projects</a>
-            <a class=" nav-link me-2 a-color" href="#contact"><small
-                    class="text-green small code-font fw-bold">04.</small>Contact</a>
+            <div class="offcanvas offcanvas-end header-background text-white" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">{{title}}</h5>
+                    <button type="button" class="btn-close btn-close-white text-white ms-5 ps-5"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" *ngFor="let link of nav_detail">
+                        <li class="nav-item">
+                            <a class=" nav-link me-2 a-color" href="{{link.url}}"><small
+                                    class="text-green code-font fw-bold me-2">{{link.number}}.</small>{{link.name}}</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-outline-transparent px-5 pt-2 text-green border border-green code-font"
+                        style="font-size: 12px;"
+                        href="https://drive.google.com/file/d/1EfqjAk3ojjL8fB3UDABYM8XFSKLZSXBJ/view?usp=sharing"
+                        target="_blank">Resume</a>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
