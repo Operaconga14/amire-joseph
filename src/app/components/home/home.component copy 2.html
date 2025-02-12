@@ -1,0 +1,98 @@
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold mb-4">Full Stack Developer</h1>
+        <p class="lead mb-4">Turning Ideas into Reality through Code</p>
+        <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<app-about></app-about>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="text-center mb-5">Skills</h2>
+        <div class="row g-4">
+            <div class="col-md-4" *ngFor="let skill of skills">
+                <div class="card skill-card h-100">
+                    <div class="card-body text-center">
+                        <i [class]="skill.icon + ' display-4 mb-3'"></i>
+                        <h4 class="card-title">{{skill.name}}</h4>
+                        <p class="card-text">{{skill.description}}</p>
+                        <div class="progress mt-3">
+                            <div class="progress-bar" role="progressbar" [style.width.%]="skill.level"
+                                [attr.aria-valuenow]="skill.level" aria-valuemin="0" aria-valuemax="100">
+                                {{skill.level}}%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- project Section -->
+<app-projects></app-projects>
+
+<!-- Testimonials Section -->
+<!-- <section id="testimonials" class="section">
+    <div class="container">
+        <h2 class="text-center mb-5">Testimonials</h2>
+        <div class="row g-4">
+            <div class="col-md-4" *ngFor="let testimonial of testimonials">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill" *ngFor="let star of [1,2,3,4,5]"></i>
+                        </div>
+                        <p class="card-text">{{testimonial.text}}</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img [src]="testimonial.image" alt="Client" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">{{testimonial.name}}</h6>
+                                <small class="text-muted">{{testimonial.position}}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Contact Section -->
+<section id="contact" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Get in Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select">
+                                    <option selected>Select Subject</option>
+                                    <option>Project Inquiry</option>
+                                    <option>Job Opportunity</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

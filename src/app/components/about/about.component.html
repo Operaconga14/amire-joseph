@@ -1,51 +1,87 @@
-<div class="mt-5 mb-5 pb-5 px-2">
+<!-- about_me  -->
+<div class="about_me">
+    <div class="about_large_title d-none d-lg-block">
+        About
+    </div>
     <div class="container">
-        <div class="d-flex">
-            <p class="h5 fw-bolder text-lightestslate"><span class="text-green code-font">01.</span> About me</p><span
-                class="text-slate ms-2">_____________________________________</span>
-        </div>
-        <div class="row text-green code-font">
-            <div class="col-12 col-md-6 mb-4 mb-md-0 mt-5">
-                <div class="about-description">
-                    <div class="mt-2">
-                        <p class="text-lightestslate">
-                            In my <span class="text-green">3+ years as a developer</span>, I strive to train every day.
-                            I have experience writing <span class="text-green">unit
-                                tests for Solidity (Hardhat) smart contracts, performing continuous integration</span>,
-                            and
-                            covering backend developer roles with <span class="text-green">ExpressJS and Angular</span>.
-                            I work effectively in teams,
-                            demonstrating empathy, motivating partners, and collaboratively setting plans and goals. My
-                            skills include implementing system improvements, optimizing sites, standardizing patterns,
-                            and suggesting and executing ideas that add value to the projects I'm involved in. Some of
-                            the technologies I have trained in and worked with include, but are not limited to:
-                        </p>
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-md-6">
+                <div class="about_e_details">
+                    <h3>About me</h3>
+                    <p>I’m a passionate Full-Stack Developer with expertise in building robust and scalable web
+                        applications.
+                        With experience in **Angular, Python, Node.js, Express, and MySQL**, I specialize in creating
+                        efficient
+                        backend systems, seamless APIs, and dynamic front-end experiences.</p>
+
+                    <p>Whether it’s crafting high-performance applications,
+                        or integrating third-party services, I thrive on solving complex problems with clean and
+                        maintainable code.</p>
+                    <div class="download_cv">
+                        <a class="boxed-btn3 btn rounded" target="_blank"
+                            href="/pdf/Amire-Joseph-Resume-+3.pdf">Download CV</a>
                     </div>
-                    <ul class="skills-list" data-aos="fade-up">
-                        <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                                class="underline">Angular </span></li>
-                        <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                                class="underline">HTML
-                                &amp; (S)CSS </span></li>
-                        <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                                class="underline">NodeJS,ExpressJS
-                            </span></li>
-                        <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                                class="underline">Python, Flask & Django
-                            </span></li>
-                        <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                                class="underline">JavaScript, TypeScript </span></li>
-                        <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                                class="underline">Bootstrap, Material, Material Design Bootstrap (MDB) </span></li>
-                    </ul>
                 </div>
             </div>
+            <div class="col-xl-6 col-md-6">
+                <div class="about_img">
+                    <div class="color_pattern d-none d-lg-block">
+                        <img src="img/about/color_grid.png" alt="">
+                    </div>
+                    <div class="my_Pic">
+                        <img src="img/about/me cropped.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ about_me  -->
 
-            <div class="col-12 col-md-6 mt-md-0 text-center" data-aos="fade-up" data-aos-duration="1000">
-                <div class="about-img-container">
-                    <a class="btn btn-outline-transparent" href="https://github.com/Operaconga14" target="_blank">
-                        <i class="bi-bricks bi icon-bigger text-green"></i>
-                    </a>
+
+<div class="counter_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-4">
+                <div class="single_counter text-center">
+                    <h3>
+                        <span class="counter">70 </span><span>+</span>
+                    </h3>
+                    <p>Total Projects</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="single_counter text-center">
+                    <h3>
+                        <span class="counter">15 </span>
+                    </h3>
+                    <p>On Going Projects</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="single_counter text-center">
+                    <h3>
+                        <span class="counter">75 </span> <span>%</span>
+                    </h3>
+                    <p>Job Success</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="discuss_projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="project_text text-center">
+                    <h3>Let’s Collaborate on Your Next Project</h3>
+                    <p>Have an idea in mind? Whether it’s a web application, API development, or backend optimization,
+                        <br> let’s turn your vision into reality.
+                        Reach out, and let’s build something great together!
+                    </p>
+
+                    <a class="boxed-btn3 rounded btn" [routerLink]="[ '/', 'contact' ]">Start Talking</a>
                 </div>
             </div>
         </div>

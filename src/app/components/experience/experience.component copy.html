@@ -1,0 +1,54 @@
+<div class="mt-5 mb-5 pb-5 px-2">
+    <div class="container">
+        <div class="d-flex">
+            <p class="h5 fw-bolder text-lightestslate"><span class="text-green code-font">02.</span> Experience</p><span
+                class="text-slate ms-2">_____________________________________</span>
+        </div>
+        <div class="d-flex mt-5">
+            <div ngbNav #nav="ngbNav" [(activeId)]="active"
+                class="nav-pills border border-0 text-green btn btn-outline-transparent flex-column"
+                orientation="vertical">
+                <ng-container ngbNavItem="heirtrust">
+                    <button ngbNavLink class="text-green code-font">Heirtrust</button>
+                    <ng-template ngbNavContent>
+                        <p class="h5 e-font fw-bolder text-lightestslate">Fullstack developer</p>
+                        <p class="small text-lightslate code-font">September 2022 - Present</p>
+                        <p class="text-slate code-font">
+                            Developed and maintained secure web applications for managing wills and testaments,
+                            including file storage and cryptocurrency inheritance for next of kin.
+                            Utilized Angular for a user-friendly and responsive frontend experience.
+                            Implemented secure and robust smart contracts using Solidity (Hardhat) to facilitate secure
+                            file storage and crypto inheritance functionalities.
+                        </p>
+                    </ng-template>
+                </ng-container>
+                <ng-container ngbNavItem="zarclays">
+                    <button ngbNavLink class="btn btn-outline-transparent text-green code-font">Zarclays</button>
+                    <ng-template ngbNavContent>
+                        <p class="h5 e-font fw-bolder text-lightestslate">Fullstack developer</p>
+                        <p class="small text-lightslate code-font">September 2021 - Present</p>
+                        <p class="text-slate code-font">
+                            Built and maintained web applications (ZSwap, Zsale, Zarpay) using Angular (frontend) and
+                            Solidity (Hardhat) (backend/smart contracts).
+                            Ensured secure and functional smart contract development for ZSwap, Zsale, and Zarpay.
+                        </p>
+                    </ng-template>
+                </ng-container>
+                <ng-container ngbNavItem="askit">
+                    <button ngbNavLink class="text-green code-font">Askit</button>
+                    <ng-template ngbNavContent>
+                        <p class="h5 e-font fw-bolder text-lightestslate">Coding Tutor and Web Designer</p>
+                        <p class="small text-lightslate code-font">August 2020 - 2021</p>
+                        <p class="text-slate code-font">
+                            Developed engaging and educational applications for children using Scratch, a
+                            beginner-friendly programming language.
+                            Provided website hosting solutions and designed user-friendly interfaces using WordPress.
+                        </p>
+                    </ng-template>
+                </ng-container>
+            </div>
+
+            <div [ngbNavOutlet]="nav" class="ms-4"></div>
+        </div>
+    </div>
+</div>
