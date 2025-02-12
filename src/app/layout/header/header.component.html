@@ -1,36 +1,119 @@
-<nav
-    class="navbar navbar-expand-lg navbar-dark justify-content-between header-background text-white justify-content-between ">
-    <div class="container-fluid">
-        <a [routerLink]="[ '' ]" class="text-white nav-brand text-decoration-none">
-            <h4 class="fw-bolder">{{title}}</h4>
-        </a>
-        <!-- toggle button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Offcanvas NavBar -->
-        <div class="d-flex">
-            <div class="offcanvas offcanvas-end header-background text-white" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">{{title}}</h5>
-                    <button type="button" class="btn-close btn-close-white text-white ms-5 ps-5"
-                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<header>
+        <div class="header-area ">
+                <div id="sticky-header" class="main-header-area">
+                        <div class="container-fluid">
+                                <div class="row align-items-center">
+                                        <div class="col-xl-3 col-lg-2">
+                                                <div class="logo">
+                                                        <a [routerLink]="['/']">
+                                                                <img src="img/logo.png" alt="" width="250">
+                                                        </a>
+                                                </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-7 text-white">
+                                                <div class="d-flex d-sm-block d-lg-none">
+                                                        <div class="text-end toggle-button">
+                                                                <!-- <button class="navbar-toggler" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#navbarLink"
+                                                                        aria-controls="navbarLink" aria-expanded="false"
+                                                                        aria-label="Toggle navigation">
+                                                                        <i class="bi bi-list text-white fs-1"></i>
+                                                                </button> -->
+                                                                <button class="navbar-toggler" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#navbarTogglerDemo02"
+                                                                        aria-controls="navbarTogglerDemo02"
+                                                                        aria-expanded="false"
+                                                                        aria-label="Toggle navigation">
+                                                                        <i class="bi bi-list text-white fs-1"></i>
+                                                                </button>
+                                                        </div>
+
+
+                                                </div>
+
+
+                                                <div class="main-menu d-none d-lg-block">
+                                                        <ul class="me-2">
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link active" aria-current="page"
+                                                                                [routerLink]="['/']">Home</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">About</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">Services</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">Projects</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">Portfolio</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">Contact</a>
+                                                                </li>
+
+                                                        </ul>
+                                                </div>
+
+                                                <nav class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link active" aria-current="page"
+                                                                                [routerLink]="['/']">Home</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">About</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">Services</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">Projects</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">Portfolio</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <a class="nav-link"
+                                                                                [routerLink]="['/']">Contact</a>
+                                                                </li>
+
+                                                        </ul>
+                                                </nav>
+
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                                <div class="Appointment">
+                                                        <div class="book_btn d-none d-lg-block">
+                                                                <a class="btn rounded"
+                                                                        [routerLink]="[ '/', 'contact' ]">Contact Me</a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-12">
+                                                <div class="mobile_menu d-block d-lg-none"></div>
+                                        </div>
+
+                                </div>
+
+
+
+                        </div>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" *ngFor="let link of nav_detail">
-                        <li class="nav-item">
-                            <a class=" nav-link me-2 a-color" href="{{link.url}}"><small
-                                    class="text-green code-font fw-bold me-2">{{link.number}}.</small>{{link.name}}</a>
-                        </li>
-                    </ul>
-                    <a class="btn btn-outline-transparent px-5 pt-2 text-green border border-green code-font"
-                        style="font-size: 12px;"
-                        href="https://drive.google.com/file/d/1EfqjAk3ojjL8fB3UDABYM8XFSKLZSXBJ/view?usp=sharing"
-                        target="_blank">Resume</a>
-                </div>
-            </div>
         </div>
-    </div>
-</nav>
+</header>

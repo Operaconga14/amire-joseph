@@ -10,4 +10,12 @@ import { RouterModule } from '@angular/router';
 })
 export class FooterComponent {
 
+  fullyear: any;
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this.fullyear = new Date().getFullYear()
+  }
+
 }
