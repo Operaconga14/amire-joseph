@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
-import { DetailsService } from '../../services/details.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -11,24 +10,4 @@ import { DetailsService } from '../../services/details.service';
 })
 export class ProjectsComponent {
 
-  personalProjects: any;
-  featuredProjects: any;
-
-  detailsService = inject(DetailsService);
-  projects: any;
-
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    this.showFeaturedProject();
-    this.showPersonalProject();
-  }
-
-  showFeaturedProject() {
-    this.projects = this.detailsService.projects;
-  }
-
-  showPersonalProject() {
-    this.projects = this.detailsService.projects;
-  }
 }

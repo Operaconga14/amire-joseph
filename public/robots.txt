@@ -1,0 +1,15 @@
+# robots.txt for Amire Joseph's Portfolio
+# This file tells search engines what to index or exclude from your site.
+
+# Allow all search engines to crawl everything except restricted pages
+User-agent: *
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+Allow: /
+
+# Disallow crawling of query parameters (optional, depending on your app's structure)
+Disallow: /*?*
+
+# Sitemap location
+Sitemap: https://amirejoseph.netlify.app/sitemap.xml
