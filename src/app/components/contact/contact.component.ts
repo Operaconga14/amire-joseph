@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ApiService } from '../../services/api.service';
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -10,7 +11,9 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 })
 export class ContactComponent {
   contactForm?: FormGroup;
+  result: any;
 
+  private apiService = inject(ApiService);
 
   constructor() {
     this.contactForm = new FormGroup({
@@ -21,8 +24,15 @@ export class ContactComponent {
     });
   }
 
-  onSendMessage() {
-    console.log("Message Sent: ", this.contactForm?.value);
+  async onSendMessage() {
+    // console.log("Message Sent: ", this.contactForm?.value);
+    (await this.apiService.post("email/receive", this.contactForm?.value)).subscribe((data) => {
+      this.result = data.email.message;
+
+      // setTimeout(() => {
+      //   this.result = '';
+      // }, 50000);
+    });
   }
 
 }
